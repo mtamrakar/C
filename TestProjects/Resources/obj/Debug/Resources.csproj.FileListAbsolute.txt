@@ -1,0 +1,9 @@
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\bin\Debug\Resources.exe.config
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\bin\Debug\Resources.exe
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\bin\Debug\Resources.pdb
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\obj\Debug\Resources.exe
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\obj\Debug\Resources.pdb
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\bin\Debug\TestObject.json
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\bin\Debug\TestObject2.json
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\bin\Debug\TestObject3.json
+c:\users\milan\documents\visual studio 2013\Projects\TestProjects\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache

@@ -11,6 +11,8 @@ namespace Resources
         private const String NAMESPACE = "Resources.";
         private const String JSON_EXT = ".json";
 
+        //Test commit
+
 
         static void Main(string[] args)
         {

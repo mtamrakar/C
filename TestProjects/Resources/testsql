@@ -1,0 +1,32 @@
+----------------------------------------------------------------------
+-- Name: email_update_tye_social_links.sql
+-- Desc:  Update hospital Thank You Email social link status
+-- Maintenance Log:
+-- Date			Author				Description
+-- 2014-09-18		mtamrakar			Created
+-- 2015-06-08	mtamrakar			return boolean 
+----------------------------------------------------------------------
+
+DROP FUNCTION IF EXISTS email.update_tye_social_links(integer[], boolean, int);
+
+-- Function: email.update_tye_social_links(integer[], boolean, int)
+
+-- DROP FUNCTION  email.update_tye_social_links(integer[], boolean, int)
+
+CREATE OR REPLACE FUNCTION email.update_tye_social_links(IN in_queue_ids integer[], IN in_has_social_link boolean, IN in_user_id int)
+  RETURNS BOOLEAN AS
+$BODY$
+BEGIN 
+	UPDATE email.tye_queue
+	SET	social_enabled = in_has_social_link,
+		mod_date = now(),
+		mod_user_id = in_user_id
+	WHERE tye_queue_id = ANY(in_queue_ids);
+	
+	RETURN FALSE;
+END;
+$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100;
+ALTER FUNCTION email.update_tye_social_links(integer[], boolean, int)
+  OWNER TO hd_vp;

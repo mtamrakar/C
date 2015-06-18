@@ -2,7 +2,7 @@
 --test est test
 ----------------------------------------------------------------------
 
-CREATE OR REPLACE FUNCTION sandbox.gittest()
+CREATE OR REPLACE FUNCTION sand_box.gittest()
   RETURNS BOOLEAN AS
 $BODY$
 BEGIN 
